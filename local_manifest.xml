@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote  name="PrajjuS"
+                 fetch="https://github.com/PrajjuS" />
+        <remote  name="BlackSuan"
+                 fetch="https://github.com/Blacksuan19" />
+	<remote  name="Ghoul"
+		 fetch="https://gitlab.com/PrajjuS" />
+	<remote  name="android_source"
+                 fetch="https://android.googlesource.com" />
+
+	<project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="PrajjuS" revision="CI" clone-depth="1" />
+	<project path="vendor/xiaomi/vince" name="vendor_xiaomi_vince" remote="PrajjuS" revision="sakura-test-user" clone-depth="1" />
+        <project path="kernel/xiaomi/vince" name="kernel_dark_ages_vince" remote="BlackSuan" revision="darky" clone-depth="1" />
+	<remove-project name="hardware/qcom-caf/wlan" />
+	<project path="hardware/qcom-caf/wlan" name="platform/hardware/qcom/wlan" remote="android_source" revision="refs/heads/master" clone-depth="1" />
+	<remove-project name="hardware/qcom-caf/msm8996" />
+	<project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio" remote="Ghoul" revision="r11.0" clone-depth="1" />
+	<project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom_display" remote="Ghoul" revision="r11.0" clone-depth="1" />
+	<project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom_media" remote="Ghoul" revision="r11.0" clone-depth="1" />
+</manifest>
