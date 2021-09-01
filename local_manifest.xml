@@ -9,6 +9,8 @@
 		 fetch="https://gitlab.com/starlight5234" />
 	<remote  name="android_source"
                  fetch="https://android.googlesource.com" />
+	<remote  name="clang"
+		 fetch="https://github.com/kdrag0n" />
 
 	<!-- Device side things -->
 	<project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="PrajjuS" revision="sakura-11-user" clone-depth="1" />
@@ -24,4 +26,7 @@
 	<project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio" remote="Godlight" revision="r11.0" clone-depth="1" />
 	<project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom_display" remote="Godlight" revision="r11.0" clone-depth="1" />
 	<project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom_media" remote="Godlight" revision="r11.0" clone-depth="1" />
+
+	<!-- Clang -->
+	<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
 </manifest>
